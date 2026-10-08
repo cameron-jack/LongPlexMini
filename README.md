@@ -257,3 +257,7 @@ One summary table per pool covering the full run.
 | Unbarcoded HiFi Read Length (mean, kb) | Mean read length from `NANOSTAT_UNBARCODED` |
 
 
+## License
+
+This project is released under the [MIT License](LICENSE.txt).
+Copyright (c) 2025-2026 seqWell, Inc.
