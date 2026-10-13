@@ -1,10 +1,15 @@
-# seqWell LongPlex Demultiplex Nextflow Pipeline
+# LongPlexMini, Minibar+Lima demultiplexing, based on seqWell LongPlex Demultiplex Nextflow Pipeline
 
-[![Nextflow Workflow Tests](https://github.com/seqwell/LongPlex/actions/workflows/nextflow-tests.yml/badge.svg?branch=main)](https://github.com/seqwell/LongPlex/actions/workflows/nextflow-tests.yml?query=branch%3Amain)
+This Nextflow pipeline is a fork of the excellent LongPlex pipeline by seqWell, so we can support the seqWell LongPlex Long Fragment Multiplexing kit on both ONT with Minibar and PacBio with Lima.
+
+All pipeline engineering is by the seqWell team, with the sole change being support for Minibar added by Cameron Jack, ANU Bioinformatics Consultancy, The Australian National University, 2026.
+
+[![Nextflow Workflow Tests](https://github.com/cameron-jack/LongPlex/actions/workflows/nextflow-tests.yml/badge.svg?branch=main)](https://github.com/cameron-jack/LongPlex/actions/workflows/nextflow-tests.yml?query=branch%3Amain)
 [![Nextflow](https://img.shields.io/badge/Nextflow%20DSL2-%E2%89%A523.11-blue.svg)](https://www.nextflow.io/)
 
 This is the Nextflow pipeline to demultiplex PacBio HiFi data for the seqWell LongPlex Long Fragment Multiplexing Kit.
-The pipeline uses [Lima](https://lima.how/) for demultiplexing and uses [longplexpy](https://github.com/seqwell/longplexpy) tools for data filtering.
+The pipeline uses [Lima](https://lima.how/) for demultiplexing PacBio HiFi reads, and [Minibar](https://github.com/calacademy-research/minibar) for ONT PromethION and MinION reads. It uses [longplexpy](https://github.com/seqwell/longplexpy) tools for data filtering.
+
 The pipeline is as shown in the image below.
 The pipeline starts with HiFi BAM files and has the following steps:
 
